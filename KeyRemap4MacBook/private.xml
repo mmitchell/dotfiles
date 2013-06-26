@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>Mitchell's Key Mods</name>
+    <item>
+      <name>ctrl+u => backspace word</name>
+      <identifier>private.ctrl_u_is_delete</identifier>
+      <autogen>--KeyToKey-- KeyCode::U, ModifierFlag::CONTROL_L, KeyCode::DELETE, ModifierFlag::CONTROL_L</autogen>
+    </item>
+    <item>
+      <name>ctrl+o => forward delete word</name>
+      <identifier>private.ctrl_o_is_forward_delete</identifier>
+      <autogen>--KeyToKey-- KeyCode::O, ModifierFlag::CONTROL_L, KeyCode::FORWARD_DELETE, ModifierFlag::CONTROL_L</autogen>
+    </item>
+    <item>
+      <name>Control_L+IKJL to Up/Down/Option+Left/Option+Right</name>
+      <appendix>+ Control_L+H/Control_L+; to beginning-of-line/end-of-line (Command+Shift+Left/Right)</appendix>
+      <identifier>private.extra_cursor_controlL_jkil_hsemicolon</identifier>
+      <autogen>__KeyToKey__ KeyCode::I,         ModifierFlag::CONTROL_L, KeyCode::CURSOR_UP</autogen>
+      <autogen>__KeyToKey__ KeyCode::K,         ModifierFlag::CONTROL_L, KeyCode::CURSOR_DOWN</autogen>
+      <autogen>__KeyToKey__ KeyCode::J,         ModifierFlag::CONTROL_L, KeyCode::CURSOR_LEFT, ModifierFlag::OPTION_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::L,         ModifierFlag::CONTROL_L, KeyCode::CURSOR_RIGHT, ModifierFlag::OPTION_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::H,         ModifierFlag::CONTROL_L, KeyCode::CURSOR_LEFT,  ModifierFlag::COMMAND_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::SEMICOLON, ModifierFlag::CONTROL_L, KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L</autogen>
+    </item>
+  </item>
+</root>
