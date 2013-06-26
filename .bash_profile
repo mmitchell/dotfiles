@@ -1,4 +1,12 @@
+# Prompt
 PS1="\w ::: "
+
+# Load the shell dotfiles, and then some:
+# * ~/.env_vars can be used for other settings you don’t want to commit.
+for file in ~/.{env_vars}; do
+	[ -r "$file" ] && source "$file"
+done
+unset file
 
 # Make sublime the defult editor
 export PATH="/Applications/Sublime Text 2.app/Contents/SharedSupport/bin:$PATH"
